@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:5001
+
+### Load database
+GET {{baseUrl}}/db/reload
+
+### Get table list
+GET {{baseUrl}}/table/list
+
+### Get table by name
+GET {{baseUrl}}/table/get?name=medias
+
+### Set table by name
+POST {{baseUrl}}/table/set
+Content-Type: application/json
+
+{
+  "name": "example-table",
+  "json": "[{\"id\":\"24\", \"value\":\"1234567890\"}]"
+} 

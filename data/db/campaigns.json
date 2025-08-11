@@ -1,0 +1,449 @@
+[
+  {
+    "id": "new_year_day",
+    "name": "New Year's Day",
+    "theme": "Celebrate New Year's Day with fresh Bahamian brunch specials and sparkling cocktails—invite locals & tourists to start this year with us!",
+    "start": "2025-01-01T10:00:00",
+    "end": "2025-01-01T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 7,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "majority_rule_day",
+    "name": "Majority Rule Day",
+    "theme": "Honor Majority Rule Day with national cuisine feast & history—share pride & culture, drive midday lunch traffic!",
+    "start": "2025-01-10T12:00:00",
+    "end": "2025-01-10T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "valentines_day",
+    "name": "Valentine's Day",
+    "theme": "Romantic Valentine's dinner at our restaurant—candlelit tables, prix-fixe menu, shared desserts—perfect for couples!",
+    "start": "2025-02-14T18:00:00",
+    "end": "2025-02-14T23:59:00",
+    "channels": [ 
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "good_friday",
+    "name": "Good Friday",
+    "theme": "Serve seafood specials for Good Friday—highlight fresh catch & traditions, drive family customers to beachside lunch!",
+    "start": "2025-04-18T12:00:00",
+    "end": "2025-04-18T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "easter_monday",
+    "name": "Easter Monday Cookout",
+    "theme": "Easter Monday cookout: grilled fish, sides, family fun—create a flavorful outdoors event to boost midday weekend sales!",
+    "start": "2025-04-21T11:00:00",
+    "end": "2025-04-21T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "labour_day",
+    "name": "Labour Day",
+    "theme": "Celebrate Labour Day parade with brunch buffet & bottomless mimosas—invite early risers during long weekend!",
+    "start": "2025-06-06T10:00:00",
+    "end": "2025-06-06T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "independence_day",
+    "name": "Independence Day",
+    "theme": "Independence Day celebration with Bahamian BBQ, patriotic cocktails, live Junkanoo beats—sell out early dinner slots!",
+    "start": "2025-07-10T17:00:00",
+    "end": "2025-07-10T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "emancipation_day",
+    "name": "Emancipation Day",
+    "theme": "Emancipation Day beach feast celebrating freedom—family meals with Bahamian staples, boost midday resort bookings!",
+    "start": "2025-08-04T12:00:00",
+    "end": "2025-08-04T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "heroes_day",
+    "name": "National Heroes' Day",
+    "theme": "Hero-themed lunch: named dishes after Bahamian icons, offer specials—honor heroes and attract patriotic crowds!",
+    "start": "2025-10-13T12:00:00",
+    "end": "2025-10-13T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "culinary_festival",
+    "name": "Culinary & Arts Festival",
+    "theme": "Join Bahamas Culinary & Arts Festival with chef tasting menu—elevate fine dining and attract foodies with exclusive event.",
+    "start": "2025-10-21T18:00:00",
+    "end": "2025-10-21T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0
+  },
+  {
+    "id": "christmas_eve",
+    "name": "Christmas Eve",
+    "theme": "Magical Christmas Eve dinner with festive decor, holiday drinks, cozy tables—reserve early for holiday & family diners!",
+    "start": "2025-12-24T18:00:00",
+    "end": "2025-12-24T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "christmas_day",
+    "name": "Christmas Day",
+    "theme": "Christmas Day brunch buffet—holiday classics & local flavors, family-friendly, pre-booked seats only!",
+    "start": "2025-12-25T12:00:00",
+    "end": "2025-12-25T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "boxing_day",
+    "name": "Boxing Day Junkanoo",
+    "theme": "Celebrate Boxing Day with live Junkanoo parade outside—drinks & quick bites, capture festive crowds post-parade!",
+    "start": "2025-12-26T14:00:00",
+    "end": "2025-12-26T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "weekly_weekend_boost",
+    "name": "Weekend Weekend Brunch",
+    "theme": "It's Saturday Brunch Time! Promote bottomless brunch with live music, mimosa specials—capture weekend crowd!",
+    "start": "2025-01-04T10:00:00",
+    "end": "2025-12-31T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "weekly"
+    }
+  },
+  {
+    "id": "bahamas-bowl",
+    "name": "Bahamas Bowl",
+    "theme": "Cheer on the Bahamas Bowl with game night pizzas & wings—get your friends together and score big with our stadium-style specials!",
+    "start": "2025-01-04T18:00:00",
+    "end": "2025-01-04T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "eid-al-fitr",
+    "name": "Eid al‑Fitr",
+    "theme": "Celebrate Eid al‑Fitr with a feast of halal delights—rich biryani, sweet treats & family platters perfect for post-fast joy.",
+    "start": "2025-02-28T12:00:00",
+    "end": "2025-02-28T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "holi",
+    "name": "Holi Festival",
+    "theme": "Brighten Holi with colorful dessert platters and fruity mocktails—perfect for vibrant, joyous sharing on social media!",
+    "start": "2025-03-14T15:00:00",
+    "end": "2025-03-14T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "good-friday",
+    "name": "Good Friday",
+    "theme": "Serve seafood specials for Good Friday—highlight fresh catch & traditions, drive family customers to beachside lunch!",
+    "start": "2025-04-18T12:00:00",
+    "end": "2025-04-18T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "eid-al-adha",
+    "name": "Eid al‑Adha",
+    "theme": "Mark Eid al‑Adha with a lamb feast—succulent grills, family platters & sweet baklava—bring everyone to break bread together.",
+    "start": "2025-06-13T12:00:00",
+    "end": "2025-06-13T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "raksha-bandhan",
+    "name": "Raksha Bandhan",
+    "theme": "Celebrate Raksha Bandhan with sibling duo dessert promo—share a sweet treat on us when you bring your brother or sister!",
+    "start": "2025-08-08T17:00:00",
+    "end": "2025-08-08T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly"
+    },
+    "medias": []
+  },
+  {
+    "id": "daily_happy_hour",
+    "name": "Daily Happy Hour",
+    "theme": "Unwind every day with our Happy Hour—half-price cocktails and appetizers from 5-7pm!",
+    "start": "2025-01-01T17:00:00",
+    "end": "2025-12-31T19:00:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "daily"
+    },
+    "medias": []
+  },
+  {
+    "id": "biweekly_ladies_night",
+    "name": "Bi-Weekly Ladies' Night",
+    "theme": "Every other Thursday is Ladies' Night—complimentary drinks for ladies and live DJ!",
+    "start": "2025-01-09T20:00:00",
+    "end": "2025-12-25T23:59:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "weekly",
+      "interval": 2
+    },
+    "medias": []
+  },
+  {
+    "id": "monthly_wine_tasting",
+    "name": "Monthly Wine Tasting",
+    "theme": "Join us every first Friday for a curated wine tasting event—explore new flavors each month!",
+    "start": "2025-01-03T18:00:00",
+    "end": "2025-12-05T21:00:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "monthly"
+    },
+    "medias": []
+  },
+  {
+    "id": "quarterly_seasonal_menu",
+    "name": "Quarterly Seasonal Menu Launch",
+    "theme": "Experience our new seasonal menu—launched every quarter with fresh, local ingredients!",
+    "start": "2025-01-15T17:00:00",
+    "end": "2025-10-15T23:00:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "monthly",
+      "interval": 3
+    },
+    "medias": []
+  },
+  {
+    "id": "biannual_customer_appreciation",
+    "name": "Bi-Annual Customer Appreciation Day",
+    "theme": "Twice a year, we celebrate you! Enjoy exclusive discounts, free samples, and live entertainment.",
+    "start": "2025-03-01T12:00:00",
+    "end": "2025-09-01T18:00:00",
+    "channels": [
+      "instagram",
+      "facebook",
+      "tiktok"
+    ],
+    "lead": 0,
+    "color": "blue",
+    "recurrence": {
+      "frequency": "yearly",
+      "interval": 2
+    },
+    "medias": []
+  }
+]

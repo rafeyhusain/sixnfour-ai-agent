@@ -1,0 +1,322 @@
+[
+  {
+    "id": "new_year_day:d-7",
+    "campaign": "new_year_day",
+    "lead": 7,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.095Z",
+    "generated": "2025-08-11T10:11:42.164Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-6",
+    "campaign": "new_year_day",
+    "lead": 6,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.097Z",
+    "generated": "2025-08-11T10:12:34.219Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-5",
+    "campaign": "new_year_day",
+    "lead": 5,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.097Z",
+    "generated": "2025-08-11T10:13:22.852Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-4",
+    "campaign": "new_year_day",
+    "lead": 4,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.097Z",
+    "generated": "2025-08-11T10:14:20.536Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-3",
+    "campaign": "new_year_day",
+    "lead": 3,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.098Z",
+    "generated": "2025-08-11T10:15:12.329Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-2",
+    "campaign": "new_year_day",
+    "lead": 2,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.098Z",
+    "generated": "2025-08-11T10:20:40.669Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-1",
+    "campaign": "new_year_day",
+    "lead": 1,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.098Z",
+    "generated": "2025-08-11T10:21:31.087Z",
+    "published": ""
+  },
+  {
+    "id": "new_year_day:d-0",
+    "campaign": "new_year_day",
+    "lead": 0,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.098Z",
+    "generated": "2025-08-11T10:22:56.218Z",
+    "published": ""
+  },
+  {
+    "id": "majority_rule_day:d-0",
+    "campaign": "majority_rule_day",
+    "lead": 0,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.109Z",
+    "generated": "2025-08-11T10:24:22.367Z",
+    "published": ""
+  },
+  {
+    "id": "valentines_day:d-0",
+    "campaign": "valentines_day",
+    "lead": 0,
+    "status": "generated",
+    "folder": "2025-08-11",
+    "scheduled": "2025-08-11T09:48:00.118Z",
+    "generated": "2025-08-11T10:25:21.783Z",
+    "published": ""
+  },
+  {
+    "id": "good_friday:d-0",
+    "campaign": "good_friday",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.127Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "easter_monday:d-0",
+    "campaign": "easter_monday",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.139Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "labour_day:d-0",
+    "campaign": "labour_day",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.153Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "independence_day:d-0",
+    "campaign": "independence_day",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.166Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "emancipation_day:d-0",
+    "campaign": "emancipation_day",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.174Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "heroes_day:d-0",
+    "campaign": "heroes_day",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.182Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "culinary_festival:d-0",
+    "campaign": "culinary_festival",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.189Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "christmas_eve:d-0",
+    "campaign": "christmas_eve",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.204Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "christmas_day:d-0",
+    "campaign": "christmas_day",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.213Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "boxing_day:d-0",
+    "campaign": "boxing_day",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.218Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "weekly_weekend_boost:d-0",
+    "campaign": "weekly_weekend_boost",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.225Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "bahamas-bowl:d-0",
+    "campaign": "bahamas-bowl",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.236Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "eid-al-fitr:d-0",
+    "campaign": "eid-al-fitr",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.244Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "holi:d-0",
+    "campaign": "holi",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.252Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "good-friday:d-0",
+    "campaign": "good-friday",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.259Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "eid-al-adha:d-0",
+    "campaign": "eid-al-adha",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.270Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "raksha-bandhan:d-0",
+    "campaign": "raksha-bandhan",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.280Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "daily_happy_hour:d-0",
+    "campaign": "daily_happy_hour",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.286Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "biweekly_ladies_night:d-0",
+    "campaign": "biweekly_ladies_night",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.292Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "monthly_wine_tasting:d-0",
+    "campaign": "monthly_wine_tasting",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.305Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "quarterly_seasonal_menu:d-0",
+    "campaign": "quarterly_seasonal_menu",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.320Z",
+    "generated": "",
+    "published": ""
+  },
+  {
+    "id": "biannual_customer_appreciation:d-0",
+    "campaign": "biannual_customer_appreciation",
+    "lead": 0,
+    "status": "scheduled",
+    "folder": "",
+    "scheduled": "2025-08-11T09:48:00.329Z",
+    "generated": "",
+    "published": ""
+  }
+]

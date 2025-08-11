@@ -1,0 +1,71 @@
+{
+  "name": "dashboard-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/services/dashboard-service/src",
+  "projectType": "application",
+  "tags": ["service"],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/apps/services/dashboard-service",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "apps/services/dashboard-service/src/main.ts",
+        "tsConfig": "apps/services/dashboard-service/tsconfig.app.json",
+        "assets": [
+          "*.md",
+          {
+            "input": "apps/services/dashboard-service/src/assets",
+            "glob": "**/*",
+            "output": "apps/services/dashboard-service/src/assets"
+          }
+        ],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "generateLockfile": true,
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "dashboard-service:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "dashboard-service:build:development"
+        },
+        "production": {
+          "buildTarget": "dashboard-service:build:production"
+        }
+      }
+    },
+    "docker-build": {
+      "dependsOn": ["build"],
+      "command": "docker build -f apps/services/dashboard-service/Dockerfile . -t dashboard-service"
+    }
+  }
+}

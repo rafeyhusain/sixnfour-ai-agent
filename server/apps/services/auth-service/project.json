@@ -1,0 +1,71 @@
+{
+  "name": "auth-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/services/auth-service/src",
+  "projectType": "application",
+  "tags": ["service"],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/apps/services/auth-service",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "apps/services/auth-service/src/main.ts",
+        "tsConfig": "apps/services/auth-service/tsconfig.app.json",
+        "assets": [
+          "*.md",
+          {
+            "input": "apps/services/auth-service/src/assets",
+            "glob": "**/*",
+            "output": "apps/services/auth-service/src/assets"
+          }
+        ],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "generateLockfile": true,
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "auth-service:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "auth-service:build:development"
+        },
+        "production": {
+          "buildTarget": "auth-service:build:production"
+        }
+      }
+    },
+    "docker-build": {
+      "dependsOn": ["build"],
+      "command": "docker build -f apps/services/auth-service/Dockerfile . -t auth-service"
+    }
+  }
+}

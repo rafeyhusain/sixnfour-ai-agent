@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # Ollama Service (same as production)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-dev
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - admin-network
+
+  # Admin App (Next.js/Shadcn) - Development
+  admin-app:
+    build:
+      context: ../../client/admin
+      dockerfile: Dockerfile
+    container_name: admin-app-dev
+    ports:
+      - "3000:3000"
+      - "9229:9229"  # Node.js debug port
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+    networks:
+      - admin-network
+    volumes:
+      - ../../client/admin:/app
+      - /app/node_modules
+      - /app/.next
+      - ../../logs:/app/logs
+    depends_on:
+      - dashboard-service
+      - auth-service
+      - marketing-service
+    command: ["npm", "run", "dev"]
+
+  # Dashboard Service - Development
+  dashboard-service:
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
+      - PORT=5001
+      - DATA_PATH=/app/data
+      - SERVICE_URL=http://localhost:5001
+    volumes:
+      - ../../apps/services/dashboard-service/src:/app/dashboard-service/src:ro
+      - ../../libs:/app/libs:ro
+      - ../../logs:/app/logs
+      - ../../../data:/app/data:rw
+      - ../../../data/uploads:/app/data/uploads:rw
+    ports:
+      - "5001:5001"
+      - "9230:9230"  # Node.js debug port
+    command: ["node", "--inspect=0.0.0.0:9230", "dashboard-service"]
+    restart: unless-stopped
+
+  # Auth Service - Development
+  auth-service:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../../apps/services/auth-service/src:/app/auth-service/src:ro
+      - ../../libs:/app/libs:ro
+      - ../../logs:/app/logs
+      - ../../../data:/app/data:rw
+    ports:
+      - "5002:5002"
+      - "9231:9231"  # Node.js debug port
+    command: ["node", "--inspect=0.0.0.0:9231", "auth-service"]
+    restart: unless-stopped
+
+  # Marketing Service - Development
+  marketing-service:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../../apps/services/marketing-service/src:/app/marketing-service/src:ro
+      - ../../libs:/app/libs:ro
+      - ../../logs:/app/logs
+      - ../../../data:/app/data:rw
+    ports:
+      - "5003:5003"
+      - "9232:9232"  # Node.js debug port
+    command: ["node", "--inspect=0.0.0.0:9232", "marketing-service"]
+    restart: unless-stopped 

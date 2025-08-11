@@ -1,0 +1,1 @@
+export { ApiGatewayModule, ApiGatewayConfig } from "./api-gateway"; 

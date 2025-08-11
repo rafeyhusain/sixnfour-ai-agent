@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:5002
+
+### Generate Content
+GET {{baseUrl}}/job/start?id=generate
+
+### Publish Content
+GET {{baseUrl}}/job/start?id=publish
+
+### Schedule Content
+GET {{baseUrl}}/job/start?id=schedule
+
+### Restart Jobs
+GET {{baseUrl}}/job/manager/do?id=restart
+
+### Stop Jobs
+GET {{baseUrl}}/job/manager/do?id=stop
+
+### Start Jobs
+GET {{baseUrl}}/job/manager/do?id=start

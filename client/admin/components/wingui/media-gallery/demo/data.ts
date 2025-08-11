@@ -1,0 +1,75 @@
+import { Media } from "../types/media";
+
+// Dummy restaurant media data
+export const dummyRestaurantMedia: Media[] = [
+  {
+    id: "1",
+    url: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["salmon", "vegetables", "grilled", "healthy"],
+    created: "2023-11-01T10:00:00Z"
+  },
+  {
+    id: "2",
+    url: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["burger", "beef", "special", "juicy"],
+    created: "2023-11-02T11:00:00Z"
+  },
+  {
+    id: "3",
+    url: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["pasta", "carbonara", "creamy", "italian"],
+    created: "2023-11-03T12:00:00Z"
+  },
+  {
+    id: "4",
+    url: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["pizza", "margherita", "italian", "mozzarella"],
+    created: "2023-11-04T13:00:00Z"
+  },
+  {
+    id: "5",
+    url: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["sushi", "japanese", "fresh", "platter"],
+    created: "2023-11-05T14:00:00Z"
+  },
+  {
+    id: "6",
+    url: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["steak", "ribeye", "premium", "dinner"],
+    created: "2023-11-06T15:00:00Z"
+  },
+  {
+    id: "7",
+    url: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
+    type: "video",
+    tags: ["ambiance", "restaurant", "atmosphere", "dining"],
+    created: "2023-11-07T16:00:00Z"
+  },
+  {
+    id: "8",
+    url: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
+    type: "video",
+    tags: ["chef", "cooking", "kitchen", "demo"],
+    created: "2023-11-08T17:00:00Z"
+  },
+  {
+    id: "9",
+    url: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["cocktails", "happy-hour", "specials", "drinks"],
+    created: "2023-11-09T18:00:00Z"
+  },
+  {
+    id: "10",
+    url: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&h=600&fit=crop",
+    type: "image",
+    tags: ["dessert", "tiramisu", "cheesecake", "sweets"],
+    created: "2023-11-10T19:00:00Z"
+  }
+]

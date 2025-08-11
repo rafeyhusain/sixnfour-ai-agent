@@ -1,0 +1,153 @@
+services:
+  # Ollama Service
+  ollama-service:
+    image: ollama/ollama:latest
+    container_name: ollama-service
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    networks:
+      - admin-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "
+        ollama serve &
+        sleep 5 &&
+        if ! ollama list | grep -q 'llama3.2:latest'; then
+          echo 'Pulling llama3.2:latest...'
+          ollama pull llama3.2:latest
+        else
+          echo 'Model llama3.2:latest already present. Skipping pull.'
+        fi &&
+        wait
+      "
+
+  # Admin App (Next.js/Shadcn)
+  admin-app:
+    build:
+      context: ../../../client/admin
+      dockerfile: Dockerfile
+    container_name: admin-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      - NEXT_PUBLIC_AUTH_SERVICE_URL=http://auth-service:5002
+      - NEXT_PUBLIC_DASHBOARD_SERVICE_URL=http://dashboard-service:5001
+      - NEXT_PUBLIC_MARKETING_SERVICE_URL=http://marketing-service:5003
+    restart: unless-stopped
+    networks:
+      - admin-network
+    volumes:
+      - ../../logs:/app/logs
+    depends_on:
+      - dashboard-service
+      - auth-service
+      - marketing-service
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Dashboard Service
+  dashboard-service:
+    build:
+      context: ../..
+      dockerfile: apps/services/dashboard-service/Dockerfile
+    container_name: dashboard-service
+    ports:
+      - "5001:5001"
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=5001
+      - DATA_PATH=/app/data
+      - SERVICE_URL=http://dashboard-service:5001
+      - LLM_SERVICE_URL=http://ollama-service:11434
+    restart: unless-stopped
+    networks:
+      - admin-network
+    volumes:
+      - ../../logs:/app/logs
+      - ../../../data:/app/data:rw
+      - ../../../data/uploads:/app/data/uploads:rw
+    depends_on:
+      - ollama-service
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Auth Service
+  auth-service:
+    build:
+      context: ../..
+      dockerfile: apps/services/auth-service/Dockerfile
+    container_name: auth-service
+    ports:
+      - "5002:5002"
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=5002
+    restart: unless-stopped
+    networks:
+      - admin-network
+    volumes:
+      - ../../logs:/app/logs
+      - ../../../data:/app/data:rw
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Marketing Service
+  marketing-service:
+    build:
+      context: ../..
+      dockerfile: apps/services/marketing-service/Dockerfile
+    container_name: marketing-service
+    ports:
+      - "5003:5003"
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=5003
+    restart: unless-stopped
+    networks:
+      - admin-network
+    volumes:
+      - ../../logs:/app/logs
+      - ../../../data:/app/data:rw
+    depends_on:
+      - dashboard-service
+      - ollama-service
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  ollama_data:
+    driver: local
+
+networks:
+  admin-network:
+    driver: bridge 

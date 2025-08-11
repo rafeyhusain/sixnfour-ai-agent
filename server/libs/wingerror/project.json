@@ -1,0 +1,20 @@
+{
+  "name": "wingerror",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/wingerror/src",
+  "projectType": "library",
+  "tags": ["lib"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/wingerror",
+        "tsConfig": "libs/wingerror/tsconfig.lib.json",
+        "packageJson": "libs/wingerror/package.json",
+        "main": "libs/wingerror/src/index.ts",
+        "assets": ["libs/wingerror/*.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "client/admin"
+		},
+		{
+			"path": "server"
+		},
+		{
+			"path": "data"
+		},
+		{
+			"path": "infra"
+		},
+		{
+			"path": "deploy"
+		}
+	],
+	"settings": {
+		"nxConsole.generateAiAgentRules": true,
+		"nxConsole.nxWorkspacePath": "..\\..\\server"
+	}
+}

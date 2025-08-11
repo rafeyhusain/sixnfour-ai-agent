@@ -1,0 +1,20 @@
+{
+  "name": "wingdb",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/wingdb/src",
+  "projectType": "library",
+  "tags": ["lib"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/wingdb",
+        "tsConfig": "libs/wingdb/tsconfig.lib.json",
+        "packageJson": "libs/wingdb/package.json",
+        "main": "libs/wingdb/src/index.ts",
+        "assets": ["libs/wingdb/*.md"]
+      }
+    }
+  }
+}

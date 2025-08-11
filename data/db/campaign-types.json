@@ -1,0 +1,42 @@
+[
+  {
+    "id": "never",
+    "description": "Never",
+    "lead": 7
+  },
+  {
+    "id": "daily",
+    "description": "Daily",
+    "lead": 7
+  },
+  {
+    "id": "weekly",
+    "description": "Weekly",
+    "lead": 7
+  },
+  {
+    "id": "bi-weekly",
+    "description": "BiWeekly",
+    "lead": 7
+  },
+  {
+    "id": "monthly",
+    "description": "Monthly",
+    "lead": 7
+  },
+  {
+    "id": "quarterly",
+    "description": "Quarterly",
+    "lead": 7
+  },
+  {
+    "id": "bi-annually",
+    "description": "BiAnnually",
+    "lead": 7
+  },
+  {
+    "id": "yearly",
+    "description": "Yearly",
+    "lead": 7
+  }
+]

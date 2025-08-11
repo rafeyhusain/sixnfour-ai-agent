@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:5001
+
+### Get table list
+GET {{baseUrl}}/content/campaign/list
+
+### Get event list
+GET {{baseUrl}}/content/campaign/event/list?campaign=bahamas-bowl
+
+### Get campaign list
+GET {{baseUrl}}/content/campaign/post/list?campaign=bahamas-bowl&event=2025-08-07

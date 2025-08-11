@@ -1,0 +1,14 @@
+[
+  {
+    "id": "generate",
+    "description": "",
+    "cron": "0 * * * *",
+    "url": "https://localhost:3000/content/publish"
+  },
+  {
+    "id": "publish",
+    "description": "",
+    "cron": "0 */2 * * *",
+    "url": "https://localhost:3000/content/publish"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "wingui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/wingui/src",
+  "projectType": "library",
+  "tags": ["ui-lib"],
+  "// targets": "to see all targets run: nx show project wingui --web",
+  "targets": {}
+}

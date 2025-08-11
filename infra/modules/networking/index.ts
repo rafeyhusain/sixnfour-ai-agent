@@ -1,0 +1,1 @@
+export { VpcModule, VpcConfig } from "./vpc"; 

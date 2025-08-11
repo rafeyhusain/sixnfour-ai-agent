@@ -1,0 +1,39 @@
+### List all media
+GET http://localhost:3000/api/dashboard/media/list
+
+### Get media by ID
+GET http://localhost:3000/api/dashboard/media/get?id=123
+
+### Create new media
+POST http://localhost:3000/api/dashboard/media/create
+Content-Type: application/json
+
+{
+  "url": "https://example.com/image.jpg",
+  "type": "image",
+  "tags": ["test", "example"]
+}
+
+### Update media
+PUT http://localhost:3000/api/dashboard/media/update?id=123
+Content-Type: application/json
+
+{
+  "tags": ["updated", "test"]
+}
+
+### Delete media
+DELETE http://localhost:3000/api/dashboard/media/delete?id=123
+
+### Upload media file
+POST http://localhost:3000/api/dashboard/media/upload
+Content-Type: application/json
+
+{
+  "filename": "test-image.jpg",
+  "data": "base64-encoded-file-data",
+  "mimetype": "image/jpeg"
+}
+
+### Search media by tags
+GET http://localhost:3000/api/dashboard/media/search?tags=test,example

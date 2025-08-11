@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@auth-service/sdk/*": ["apps/services/auth-service/src/sdk/*"],
+      "@awing/config-plugin": ["libs/config-plugin/src/index.ts"],
+      "@awing/llm-plugin": ["libs/llm-plugin/src/index.ts"],
+      "@awing/marketing-agent": ["libs/marketing-agent/src/index.ts"],
+      "@awing/marketing-db": ["libs/marketing-db/src/index.ts"],
+      "@awing/pino-plugin": ["libs/pino-plugin/src/index.ts"],
+      "@awing/scheduler-plugin": ["libs/scheduler-plugin/src/index.ts"],
+      "@awing/social-plugin": ["libs/social-plugin/src/index.ts"],
+      "@awing/wingdate": ["libs/wingdate/src/index.ts"],
+      "@awing/wingdb": ["libs/wingdb/src/index.ts"],
+      "@awing/wingerror": ["libs/wingerror/src/index.ts"],
+      "@awing/wingui": ["libs/wingui/src/index.ts"],
+      "@awing/wingui/server": ["libs/wingui/src/server.ts"],
+      "@dashboard-service/*": ["apps/services/dashboard-service/src/*"],
+      "@marketing-service/*": ["apps/services/marketing-service/src/*"]
+    }
+  },
+  "exclude": ["assets", "node_modules", "tmp"]
+}

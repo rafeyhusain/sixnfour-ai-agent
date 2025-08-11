@@ -1,0 +1,20 @@
+{
+  "name": "wingdate",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/wingdate/src",
+  "projectType": "library",
+  "tags": ["lib"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/wingdate",
+        "tsConfig": "libs/wingdate/tsconfig.lib.json",
+        "packageJson": "libs/wingdate/package.json",
+        "main": "libs/wingdate/src/index.ts",
+        "assets": ["libs/wingdate/*.md"]
+      }
+    }
+  }
+}

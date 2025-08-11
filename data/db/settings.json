@@ -1,0 +1,127 @@
+[
+  {
+    "id": "ollama:baseUrl",
+    "description": "ollama:baseUrl",
+    "value": "http://ollama-service:11434"
+  },
+  {
+    "id": "_ollama:baseUrl",
+    "description": "ollama:baseUrl",
+    "value": "http://localhost:11434"
+  },
+  {
+    "id": "ollama:timeout",
+    "description": "ollama:timeout",
+    "value": "60000"
+  },
+  {
+    "id": "ollama:maxRetries",
+    "description": "ollama:maxRetries",
+    "value": "2"
+  },
+  {
+    "id": "ollama:enabled",
+    "description": "ollama:enabled",
+    "value": "true"
+  },
+  {
+    "id": "facebook:pageId",
+    "description": "facebook:pageId",
+    "value": "113949078473116"
+  },
+  {
+    "id": "facebook:userAccessToken",
+    "description": "facebook:userAccessToken",
+    "value": "XEAAJCiXZCM2VwBPA0LooSTeHYe7zoXwEZBw4PyzSUlr73xJCLZB2jIDeEST3Ly18WSbSoCen2oVgUMZCJ06UsaqOADI6Hqf7OPiWvL3dYZCL8wrpRPij8rOhhavDPnm365X9lPHx2NcKCZCo1BTjpL8gnyLYmLtHhoV2EHZBb72jdM3ERTVSEfdCRFKVYzQ7"
+  },
+  {
+    "id": "facebook:pageAccessToken",
+    "description": "facebook:pageAccessToken",
+    "value": "XEAAJCiXZCM2VwBPIO2ZBiHv0btpMboQ7XW1TCpcmQziWeF8HypYH9jcVQONa0ImdktyHTSUCWqaiZAxjZBjL05VhN5ynAquN3qmksh4nZC99ZAZC3YPJPVLg95cV512tuCDVZBA2W9zqf0OkuJD1WeaZBwrnSZBvZC4DY1M4OWcmgDbWsKuOZCtfmrDdbZCMiMPykXrZBqgeRsZD"
+  },
+  {
+    "id": "facebook:maxRetries",
+    "description": "facebook:maxRetries",
+    "value": "1"
+  },
+  {
+    "id": "facebook:enabled",
+    "description": "facebook:enabled",
+    "value": "true"
+  },
+  {
+    "id": "facebook:retryDelay",
+    "description": "facebook:retryDelay",
+    "value": "1000"
+  },
+  {
+    "id": "facebook:timeout",
+    "description": "facebook:timeout",
+    "value": "300000"
+  },  
+  {
+    "id": "facebook:apiNumber",
+    "description": "facebook:apiNumber",
+    "value": "v23.0"
+  },
+  {
+    "id": "instagram:userId",
+    "description": "instagram:userId",
+    "value": "17841461441161016"
+  },
+  {
+    "id": "instagram:accessToken",
+    "description": "instagram:accessToken",
+    "value": "XEAAJCiXZCM2VwBPIO2ZBiHv0btpMboQ7XW1TCpcmQziWeF8HypYH9jcVQONa0ImdktyHTSUCWqaiZAxjZBjL05VhN5ynAquN3qmksh4nZC99ZAZC3YPJPVLg95cV512tuCDVZBA2W9zqf0OkuJD1WeaZBwrnSZBvZC4DY1M4OWcmgDbWsKuOZCtfmrDdbZCMiMPykXrZBqgeRsZD"
+  },
+  {
+    "id": "instagram:maxRetries",
+    "description": "instagram:maxRetries",
+    "value": "1"
+  },
+  {
+    "id": "instagram:enabled",
+    "description": "instagram:enabled",
+    "value": "true"
+  },
+  {
+    "id": "instagram:retryDelay",
+    "description": "instagram:retryDelay",
+    "value": "1000"
+  },
+  {
+    "id": "instagram:apiNumber",
+    "description": "instagram:apiNumber",
+    "value": "v23.0"
+  },
+  {
+    "id": "tiktok:accessToken",
+    "description": "tiktok:accessToken",
+    "value": "your-tiktok-access-token"
+  },
+  {
+    "id": "tiktok:clientKey",
+    "description": "tiktok:clientKey",
+    "value": "your-client-key"
+  },
+  {
+    "id": "tiktok:openId",
+    "description": "tiktok:openId",
+    "value": "your-open-id"
+  },
+  {
+    "id": "tiktok:maxRetries",
+    "description": "tiktok:maxRetries",
+    "value": "1"
+  },
+  {
+    "id": "tiktok:enabled",
+    "description": "tiktok:enabled",
+    "value": "true"
+  },
+  {
+    "id": "tiktok:retryDelay",
+    "description": "tiktok:retryDelay",
+    "value": "1000"
+  }
+]

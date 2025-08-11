@@ -1,0 +1,4 @@
+@baseUrl = http://localhost:5001
+
+### Get table list
+GET {{baseUrl}}

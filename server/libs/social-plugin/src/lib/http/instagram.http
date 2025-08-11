@@ -1,0 +1,6 @@
+
+@PAGE_ACCESS_TOKEN=EAAJCiXZCM2VwBPIO2ZBiHv0btpMboQ7XW1TCpcmQziWeF8HypYH9jcVQONa0ImdktyHTSUCWqaiZAxjZBjL05VhN5ynAquN3qmksh4nZC99ZAZC3YPJPVLg95cV512tuCDVZBA2W9zqf0OkuJD1WeaZBwrnSZBvZC4DY1M4OWcmgDbWsKuOZCtfmrDdbZCMiMPykXrZBqgeRsZD
+@PAGE_ID=113949078473116
+
+GET https://graph.facebook.com/v23.0/{{PAGE_ID}}?fields=instagram_business_account&access_token={{PAGE_ACCESS_TOKEN}}
+

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "schedule",
+    "description": "Schedule marketing content for the event every 1 minute.",
+    "cron": "0 * * * * *",
+    "url": "https://localhost:5002/job/start?id=schedule",
+    "status": "idle"
+  },
+  {
+    "id": "generate",
+    "description": "Generate marketing content for the event every 1 hour.",
+    "cron": "0 * * * *",
+    "url": "https://localhost:5002/job/start?id=generate",
+    "status": "idle"
+  },
+  {
+    "id": "publish",
+    "description": "Publish the generated content to the selected channels every 2 hour.",
+    "cron": "0 */2 * * *",
+    "url": "https://localhost:5002/job/start?id=publish",
+    "status": "idle"
+  }
+]

@@ -1,0 +1,61 @@
+@baseUrl = http://localhost:5002
+
+### Create campaign
+POST {{baseUrl}}/campaign/create
+Content-Type: application/json
+
+{
+  "id": "example-campaign",
+  "name": "example-campaign",
+  "theme": "example-theme",
+  "start": "2025-01-01",
+  "end": "2025-01-31",
+  "channels": ["facebook", "instagram"],
+  "lead": 1,
+  "color": "orange",
+  "recurrence": {
+    "frequency": "daily",
+    "interval": 1,
+    "byDay": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+    "count": 10,
+    "until": "2025-01-31"
+  }
+}
+
+### Update campaign
+POST {{baseUrl}}/campaign/update
+Content-Type: application/json
+
+{
+  "id": "example-campaign",
+  "name": "updated-campaign",
+  "theme": "updated-theme",
+  "start": "2025-01-01",
+  "end": "2025-01-31",
+  "channels": ["facebook"],
+  "lead": 2,
+  "color": "blue",
+  "recurrence": {
+    "frequency": "weekly",
+    "interval": 2,
+    "byDay": ["monday", "friday"],
+    "count": 5,
+    "until": "2025-01-31"
+  }
+}
+
+### Delete campaign
+POST {{baseUrl}}/campaign/delete
+Content-Type: application/json
+
+{
+  "id": "example-campaign"
+}
+
+### Get campaign by ID
+GET {{baseUrl}}/campaign/get?id=example-campaign
+
+### List campaigns
+GET {{baseUrl}}/campaign/list
+GET {{baseUrl}}/campaign/list?status=active 
+

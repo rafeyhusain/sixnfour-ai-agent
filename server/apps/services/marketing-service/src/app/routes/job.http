@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:5002
+
+### Generate Content
+GET {{baseUrl}}/job/start?id=generate
+Accept: application/json
+
+### Publish Content
+GET {{baseUrl}}/job/start?id=publish
+Accept: application/json
+
+### Schedule Content
+GET {{baseUrl}}/job/start?id=schedule
+Accept: application/json
